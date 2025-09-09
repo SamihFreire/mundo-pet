@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* CONTENT */
+    --content-primary: #FFFFFF;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+
+    /* BACKGROUND */
+    --background-primary: #151515;
+    --background-secondary: #1E1E1E;
+    --background-tertiary: #23242C;
+    --background-brand: #9282FA;
+    --background-highlights: #BDB4FA;
+
+
+    /* BORDER */
+    --border-primary: #3E3C41;
+    --border-secondary: #86818C;
+    --border-brand: #9282FA;
+    --border-divisor: #353339;
+
+
+    /* ACCENT */
+    --accent-blue: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #F09102;
+    --accent-orange-light: #75501B;
+
+    /* TIPOGRAFIA */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+    /* font: [weight] [size]/[line-height] [family]; */
+
+    /* INTER TIGHT */
+    --ff-inter-tight: "Inter Tight", sans-serif;
+    --title: var(--fw-bold) 1.5rem/3.2 var(--ff-inter-tight);
+
+
+    /* INTER */
+    --ff-inter: "Inter", sans-serif;
+    --paragraph-medium: var(--fw-medium) 0.875rem/2.4 var(--ff-inter);
+    --paragraph-small: var(--fw-medium) 0.75rem/1.6 var(--ff-inter);
+    --label-large: var(--fw-bold) 1rem/2.4 var(--ff-inter);
+    --label-medium: var(--fw-bold) 0.875rem/2.4 var(--ff-inter);
+    --label-small: var(--fw-bold) 0.75rem/1.6 var(--ff-inter);
+    --link: var(--fw-medium) 0.75rem/1.6 var(--ff-inter);
+}

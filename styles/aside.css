@@ -1,0 +1,19 @@
+aside {
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 3rem;
+        width: 9.5625rem;
+        
+        border-radius: 0 0 0.625rem;
+        background-color: #2E2C30;
+
+        & img {
+            width: 7.0625rem;
+            height: 1.5rem;
+        }
+    }
+
+}
