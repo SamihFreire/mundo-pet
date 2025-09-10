@@ -1,7 +1,7 @@
 main {
-    /* display: grid; */
     margin-inline: auto;
     padding-top: 3.875rem;
+    min-width: 39.35rem;
 
     & .schedule-header {
         display: flex;
