@@ -109,6 +109,63 @@
             </li> 
           </ul>
         </section>
+        <form class="form">
+            <section class="create-schedule">
+                <header class="create-schedule-header">
+                    <h2>Agende um atendimento</h2>
+                    <p>Preencha os dados do cliente para realizar o agendamento:</p>
+                </header>
+                
+                <div class="form-group">
+                    <div>
+                        <label for="tutor-name">Nome do tutor</label>
+                        <img src="./assets/icons/user.svg" alt="Ícone de usuário"/>
+                        <input type="text" id="tutor-name" name="tutor-name" placeholder="Nome do tutor" required />
+                    </div>
+
+                    <div>
+                        <label for="pet-name">Nome do pet</label>
+                        <img src="./assets/icons/pet-paw.svg" alt="Ícone de pet"/>
+                        <input type="text" id="pet-name" name="pet-name" placeholder="Nome do pet" required />
+                    </div>
+
+                    <div>
+                        <label for="phone">Telefone</label>
+                        <img src="./assets/icons/phone.svg" alt="Ícone de telefone"/>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" required />
+                    </div>
+
+                    <div>
+                        <label for="service-description">Descrição do serviço</label>
+                        <textarea name="service-description" id="service-description" placeholder="Banho e tosa" required></textarea>
+                    </div>
+
+                    <div class="schedule-date">
+                        <label for="schedule-date">Data</label>
+                        <img src="./assets/icons/calendar.svg" alt="Calendário" />
+                        <input type="date" id="date" name="date" required />
+                    </div>
+
+                    <div>
+                        <label for="schedule-time">Hora</label>
+                        <img src="./assets/icons/clock.svg" alt="Relógio">
+                        <select name="schedule-time" id="schedule-time">
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                        </select>
+                    </div>
+
+                    <div class="button-confirm-schedule">
+                        <button class="new-appointment">AGENDAR</button>
+                    </div>
+                </div>
+
+            </section>
+        </form>
     </main>
 
     <footer class="schedule-footer">

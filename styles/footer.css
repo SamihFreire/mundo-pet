@@ -6,8 +6,8 @@ footer {
     padding-bottom: 2.062rem;
 
     & .footer-content {
-        margin-inline: 1.875rem;
-        padding-bottom: 2.062rem;
+        margin-inline: inherit;
+        padding-bottom: inherit;
         position: fixed;
         right: 0;
         bottom: 0;
@@ -25,20 +25,10 @@ footer {
             text-transform: uppercase;
             text-align: center;
             filter: drop-shadow(1px 1px 25px #3b3180);
-            /* z-index: 1; */
     
             &:hover {
                 cursor: pointer;
             }
         }
-
-        /* &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-color: var(--content-brand);
-            z-index: -1;
-            border-radius: 0.5rem;
-        } */
     }
 }
