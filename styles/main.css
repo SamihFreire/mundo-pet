@@ -1,6 +1,7 @@
 main {
-    display: flex;
+    /* display: grid; */
     margin-inline: auto;
+    padding-top: 3.875rem;
 
     & .schedule-header {
         display: flex;
@@ -60,6 +61,81 @@ main {
             }
         }
     }
-}
 
+    & .schedule-period {
+        background-color: var(--background-tertiary);
+        border-radius: 0.625rem;
+        margin-top: 2rem;
+
+        & header {
+            height: 3rem;
+            padding-inline: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font: var(--label-large);
+            color: var(--content-primary);
+            border-bottom: 0.6px solid var(--border-divisor);
+
+            & > strong {
+                color: var(--content-secondary);
+            }
+
+            & div {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+        }
+
+        & ul {
+            list-style: none;
+            padding: 1.25rem;
+
+            & li {
+                display: flex;
+                align-items: center;
+                height: 3rem;
+                padding-inline: 0.75rem;
+
+                & > strong {
+                    font: var(--label-medium);
+                    color: var(--content-primary);
+                    line-height: inherit;
+                }
+
+                & div {
+                    margin-inline: 1rem;
+                    min-width: 12.187rem;
+                    & #pet-name {
+                        font: var(--label-small);
+                        color: var(--content-primary);
+                    }
+
+                    & #tutor-name, #service {
+                        font: var(--paragraph-small);
+                        color: var(--content-secondary);
+                    }
+                }
+
+                & #service {
+                    font: var(--paragraph-small);
+                    color: var(--content-secondary);
+                }
+                
+                & button {
+                    all: unset;
+                    margin-left: auto;
+                    font: var(--paragraph-small);
+                    color: var(--content-tertiary);
+                }
+            }
+
+            & .divisor {
+                height: 1px;
+                border-bottom: 0.6px solid var(--border-divisor);
+            }
+        }
+    }
+}
 
