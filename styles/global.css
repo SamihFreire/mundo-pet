@@ -36,6 +36,7 @@
     --accent-orange-light: #75501B;
 
     /* TIPOGRAFIA */
+    --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
     --fw-extra-bold: 800;

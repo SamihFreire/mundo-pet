@@ -1,0 +1,65 @@
+form {
+
+    & .create-schedule {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+        width: 29.812rem;
+        height: 44.75rem;
+        padding-top: 2.343rem;
+        padding-inline: 2.5rem;
+        border-radius: 0.75rem;
+        background-color: var(--background-tertiary);
+
+        & h2 {
+            font: var(--title);
+            color: var(--content-primary);
+            line-height: 1;
+        }
+
+        & p {
+            font: var(--paragraph-medium);
+            color: var(--content-secondary);
+        }
+
+        & .form-group {
+            padding-top: 1.75rem;
+            & label {
+                font: var(--label-medium);
+                color: var(--content-primary);
+            }
+            & div:not(.button-confirm-schedule) {
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                border: 1px solid var(--border-primary);
+
+                font: var(--fw-regular) 1rem/1.5 var(--ff-inter);
+
+                & img {
+                    height: 1.25rem;
+                    width: 1.25rem;
+                }
+
+                & input, & textarea {
+                    all: unset;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+}
