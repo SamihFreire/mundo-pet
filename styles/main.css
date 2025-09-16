@@ -1,9 +1,11 @@
 main {
     margin-inline: auto;
     padding-top: 3.875rem;
+    padding-inline: 3rem;
+    padding-bottom: 3rem;
     min-width: 39.35rem;
     position: relative;
-    padding-inline: 3rem;
+
 
     & .schedule-header {
         display: flex;

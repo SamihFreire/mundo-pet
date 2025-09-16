@@ -2,7 +2,7 @@ footer {
     align-content: end;
     min-width: 13.625rem;
     position: relative;
-    margin-inline: 1.875rem;
+    margin-inline: 0.9375rem;
     padding-bottom: 2.062rem;
 
     & .footer-content {
@@ -16,10 +16,8 @@ footer {
             width: 13.625rem;
             height: 3rem;
             background-color: var(--content-brand);
-            box-shadow: 10px -15px -10px black;
     
             font: var(--label-large);
-            color: var(#050505);
     
             border-radius: 0.5rem;
             text-transform: uppercase;

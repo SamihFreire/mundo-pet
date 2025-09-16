@@ -118,46 +118,62 @@
                 </header>
                 
                 <div class="form-group">
-                    <label for="form-tutor-name">Nome do tutor</label>
                     <div>
-                        <img src="./assets/icons/user.svg" alt="Ícone de usuário"/>
-                        <input type="text" id="form-tutor-name" name="form-tutor-name" placeholder="Nome do tutor" required />
+                        <label for="form-tutor-name">Nome do tutor</label>
+                        <div class="input-form">
+                            <img src="./assets/icons/user.svg" alt="Ícone de usuário"/>
+                            <input type="text" id="form-tutor-name" name="form-tutor-name" placeholder="Nome do tutor" required />
+                        </div>
                     </div>
 
-                    <label for="form-pet-name">Nome do pet</label>
                     <div>
-                        <img src="./assets/icons/pet-paw.svg" alt="Ícone de pet"/>
-                        <input type="text" id="form-pet-name" name="form-pet-name" placeholder="Nome do pet" required />
+                        <label for="form-pet-name">Nome do pet</label>
+                        <div class="input-form">
+                            <img src="./assets/icons/pet-paw.svg" alt="Ícone de pet"/>
+                            <input type="text" id="form-pet-name" name="form-pet-name" placeholder="Nome do pet" required />
+                        </div>
                     </div>
 
-                    <label for="form-phone">Telefone</label>
                     <div>
-                        <img src="./assets/icons/phone.svg" alt="Ícone de telefone"/>
-                        <input type="tel" id="form-phone" name="form-phone" placeholder="(00) 0 0000-0000" required />
+                        <label for="form-phone">Telefone</label>
+                        <div class="input-form">
+                            <img src="./assets/icons/phone.svg" alt="Ícone de telefone"/>
+                            <input type="tel" id="form-phone" name="form-phone" placeholder="(00) 0 0000-0000" required />
+                        </div>
                     </div>
 
-                    <label for="form-service-description">Descrição do serviço</label>
                     <div>
-                        <textarea name="form-service-description" id="form-service-description" placeholder="Banho e tosa" required></textarea>
+                        <label for="form-service-description">Descrição do serviço</label>
+                        <div class="input-form">
+                            <textarea name="form-service-description" id="form-service-description" placeholder="Banho e tosa" required></textarea>
+                        </div>
                     </div>
+                    
+                    <div class="section-date-time">
+                        
+                        <div>
+                            <label for="date">Data</label>
+                            <div class="schedule-date">
+                                <img src="./assets/icons/calendar.svg" alt="Calendário" />
+                                <input type="date" id="date" name="date" required />
+                            </div>
+                        </div>
 
-                    <label for="form-schedule-date">Data</label>
-                    <div class="schedule-date">
-                        <img src="./assets/icons/calendar.svg" alt="Calendário" />
-                        <input type="form-schedule-date" id="form-schedule-date" name="form-schedule-date" required />
-                    </div>
+                        <div>
+                            <label for="schedule-time">Hora</label>
+                            <div>
+                                <img src="./assets/icons/clock.svg" alt="Relógio">
+                                <select name="schedule-time" id="schedule-time">
+                                    <option value="12">12:00</option>
+                                    <option value="13">13:00</option>
+                                    <option value="14">14:00</option>
+                                    <option value="15">15:00</option>
+                                    <option value="16">16:00</option>
+                                    <option value="17">17:00</option>
+                                </select>
+                            </div>
+                        </div>
 
-                    <label for="schedule-time">Hora</label>
-                    <div>
-                        <img src="./assets/icons/clock.svg" alt="Relógio">
-                        <select name="schedule-time" id="schedule-time">
-                            <option value="12">12:00</option>
-                            <option value="13">13:00</option>
-                            <option value="14">14:00</option>
-                            <option value="15">15:00</option>
-                            <option value="16">16:00</option>
-                            <option value="17">17:00</option>
-                        </select>
                     </div>
 
                     <div class="button-confirm-schedule">
