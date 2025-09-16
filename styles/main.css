@@ -132,6 +132,13 @@ main {
                     margin-left: auto;
                     font: var(--paragraph-small);
                     color: var(--content-tertiary);
+                    transition: color 0.2s ease, text-decoration 0.2s ease;
+                }
+
+                & button:hover {
+                    cursor: pointer;
+                    color: var(--content-primary);
+                    text-decoration: underline;
                 }
             }
 

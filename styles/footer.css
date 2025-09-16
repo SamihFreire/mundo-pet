@@ -23,9 +23,11 @@ footer {
             text-transform: uppercase;
             text-align: center;
             filter: drop-shadow(1px 1px 25px #3b3180);
+            transition: background-color 0.2s ease;
     
             &:hover {
                 cursor: pointer;
+                background-color: var(--background-highlights);
             }
         }
     }
