@@ -186,3 +186,14 @@ form {
         backdrop-filter: blur(5px);
     }
 }
+
+@media (width < 40rem) {
+    form {
+        min-width: 27rem;
+        margin-inline: 1.5rem;
+
+        & .create-schedule {
+            width: 30rem;
+        }
+    }
+}
