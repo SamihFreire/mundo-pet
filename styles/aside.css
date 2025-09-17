@@ -18,3 +18,13 @@ aside {
     }
 
 }
+
+@media (width < 40rem) {
+    aside {
+        width: 100%;
+
+        & div {
+            width: 9.562rem;
+        }
+    }
+}

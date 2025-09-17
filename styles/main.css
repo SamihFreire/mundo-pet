@@ -3,7 +3,7 @@ main {
     padding-top: 3.875rem;
     padding-inline: 3rem;
     padding-bottom: 3rem;
-    min-width: 39.35rem;
+    min-width: 42.5rem;
     position: relative;
 
 
@@ -101,34 +101,39 @@ main {
                 align-items: center;
                 height: 3rem;
                 padding-inline: 0.75rem;
-
-                & > strong {
-                    font: var(--label-medium);
-                    color: var(--content-primary);
-                    line-height: inherit;
-                }
-
+                
                 & div {
-                    margin-inline: 1rem;
-                    min-width: 12.187rem;
-                    & #pet-name {
-                        font: var(--label-small);
+                    display: flex;
+                    & > strong {
+                        font: var(--label-medium);
                         color: var(--content-primary);
+                        line-height: inherit;
                     }
 
-                    & #tutor-name, #service {
-                        font: var(--paragraph-small);
-                        color: var(--content-secondary);
+                    & div {
+                        margin-inline: 1rem;
+                        min-width: 10.8rem;
+                        & #pet-name {
+                            font: var(--label-small);
+                            color: var(--content-primary);
+                        }
+
+                        & #tutor-name, #service {
+                            font: var(--paragraph-small);
+                            color: var(--content-secondary);
+                        }
                     }
                 }
 
                 & #service {
+                    min-width: 9rem;
                     font: var(--paragraph-small);
                     color: var(--content-secondary);
                 }
                 
                 & button {
                     all: unset;
+                    min-width: 8.312rem;
                     margin-left: auto;
                     font: var(--paragraph-small);
                     color: var(--content-tertiary);
@@ -150,3 +155,37 @@ main {
     }
 }
 
+@media (width < 40rem) {
+    main {
+        padding-block: 1.312rem 2.75rem;
+        padding-inline: 1.25rem;
+        min-width: 27rem;
+
+        & .schedule-header {
+            margin-bottom: 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        & .schedule-period {
+            margin-block: 0.75rem 1.5rem;
+
+            & .period {
+                & li {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    & > div {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+
+            & .divisor {
+                margin-block: 1rem;
+            }
+        }
+    }
+}
