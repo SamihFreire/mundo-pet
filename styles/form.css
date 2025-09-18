@@ -92,7 +92,6 @@ form {
                 display: flex;
                 gap: 1rem;
 
-                
                 & div {
                     width: 50%;
 
@@ -194,6 +193,16 @@ form {
 
         & .create-schedule {
             width: 30rem;
+
+            & .form-group {
+                & .section-date-time {
+                    flex-direction: column;
+
+                    & div {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
