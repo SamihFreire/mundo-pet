@@ -27,7 +27,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayj
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_aside_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/aside.css */ \"./src/styles/aside.css\");\n/* harmony import */ var _styles_body_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/body.css */ \"./src/styles/body.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/footer.css */ \"./src/styles/footer.css\");\n\n\n\n\n//CSS\n\n\n\n\n\n\n\n//# sourceURL=webpack://mundo-pet/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _libs_dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./libs/dayjs */ \"./src/libs/dayjs.js\");\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_aside_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/aside.css */ \"./src/styles/aside.css\");\n/* harmony import */ var _styles_body_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/body.css */ \"./src/styles/body.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/form.css */ \"./src/styles/form.css\");\n/* harmony import */ var _styles_footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/footer.css */ \"./src/styles/footer.css\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/form/submit.js */ \"./src/modules/form/submit.js\");\n/* harmony import */ var _modules_form_submit_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_form_submit_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _modules_main_schedule_header_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/main/schedule-header.js */ \"./src/modules/main/schedule-header.js\");\n\n\n\n\n//CSS\n\n\n\n\n\n\n\n//JS\n\n\n\n//# sourceURL=webpack://mundo-pet/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/modules/form/submit.js":
+/*!************************************!*\
+  !*** ./src/modules/form/submit.js ***!
+  \************************************/
+/***/ (() => {
+
+eval("var form = document.querySelector(\"form\");\nif (form != null) {\n  form.onsubmit = function (event) {\n    //Previne o comportamento padrão do formulário\n    event.preventDefault();\n    console.log(\"Formulário enviado\");\n  };\n}\n\n//# sourceURL=webpack://mundo-pet/./src/modules/form/submit.js?");
+
+/***/ }),
+
+/***/ "./src/modules/main/schedule-header.js":
+/*!*********************************************!*\
+  !*** ./src/modules/main/schedule-header.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\");\n/* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_0__);\n\nvar scheduleDateHeader = document.getElementById(\"schedule-date-header\");\n\n//Carrega a data atual no input de data\nscheduleDateHeader.value = dayjs__WEBPACK_IMPORTED_MODULE_0___default()(new Date()).format(\"YYYY-MM-DD\");\n\n//# sourceURL=webpack://mundo-pet/./src/modules/main/schedule-header.js?");
 
 /***/ }),
 

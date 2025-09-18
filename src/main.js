@@ -9,3 +9,7 @@ import "./styles/body.css"
 import "./styles/main.css"
 import "./styles/form.css"
 import "./styles/footer.css"
+
+//JS
+import "./modules/form/submit.js"
+import "./modules/main/schedule-header.js"
