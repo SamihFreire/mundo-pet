@@ -130,6 +130,18 @@ form {
 
                         & select {
                             appearance: none;
+
+                            & option {
+                                color: black;
+                            }
+
+                            & option:disabled {
+                                color: rgb(187, 186, 186);
+                            }
+                        }
+
+                        & select:focus {
+                            color: var(--content-primary);
                         }
                     }
 
@@ -139,7 +151,7 @@ form {
 
                     & div:focus-within {
                         border: 1px solid var(--border-brand);
-
+                        
                         & input {
                             color: var(--content-primary);
                         }

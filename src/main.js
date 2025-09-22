@@ -12,4 +12,6 @@ import "./styles/footer.css"
 
 //JS
 import "./modules/form/submit.js"
-import "./modules/main/schedule-header.js"
+import "./modules/schedules/schedule-header.js"
+import "./modules/page-load.js"
+import "./modules/schedules/load.js"
