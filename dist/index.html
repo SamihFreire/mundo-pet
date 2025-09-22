@@ -146,7 +146,7 @@
                         <label for="form-phone">Telefone</label>
                         <div class="input-form">
                             <img src="./src/assets/icons/phone.svg" alt="Ícone de telefone"/>
-                            <input type="tel" autocomplete="off" id="form-phone" name="form-phone" placeholder="(00) 0 0000-0000" required />
+                            <input type="tel" autocomplete="off" id="form-phone" name="form-phone" maxlength="15" placeholder="(00) 0 0000-0000" required />
                         </div>
                     </div>
 
@@ -172,8 +172,8 @@
                             <div>
                                 <img src="./src/assets/icons/clock.svg" alt="Relógio">
                                 <select name="schedule-time" id="schedule-time">
-                                    <!-- <option value="12" disabled>12:00</option>
-                                    <option value="13">13:00</option> -->
+                                    <option value="12" disabled>12:00</option>
+                                    <option value="13">13:00</option>
                                 </select>
                             </div>
                         </div>
