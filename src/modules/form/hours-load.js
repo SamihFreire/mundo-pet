@@ -12,12 +12,7 @@ export function hoursLoad({ date }) {
         //Recupera somente a hora
         const [scheduleHour] = hour.split(":");
 
-        const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
-
-        console.log({
-            hour,
-            available: isHourPast
-        });
+        const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs());
 
         return {
             hour,
