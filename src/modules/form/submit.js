@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { scheduleNew } from "../../services/schedule-new.js"
 
 const form = document.querySelector("form");
 const dateForm = document.getElementById("date-form");
@@ -18,7 +19,7 @@ if(form != null){
     //Definindo a data mínima como a data atual
     dateForm.min = inputToday;
 
-    form.onsubmit = (event) => {
+    form.onsubmit = async (event) => {
         //Previne o comportamento padrão do formulário
         event.preventDefault();
 
@@ -65,14 +66,14 @@ if(form != null){
             
             const id = new Date().getTime();
 
-            console.log({
+            await scheduleNew({
                 id,
                 tutorName,
                 petName,
                 phone,
                 serviceDescription,
                 when,
-            })
+            });
 
         } catch (error) {
             alert("Não foi possível realizar o agendamento.");
