@@ -5,6 +5,9 @@ import { openingHours } from "../../utils/opening-hours.js"
 const scheduleTime = document.getElementById("schedule-time");
 
 export function hoursLoad({ date }) {
+    //Limpa os horarios anteriores
+    scheduleTime.innerHTML = "";
+
     const opening = openingHours.map((hour) => {
         //Recupera somente a hora
         const [scheduleHour] = hour.split(":");
