@@ -1,0 +1,9 @@
+.occult {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}

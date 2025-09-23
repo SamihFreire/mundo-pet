@@ -1,6 +1,11 @@
 form {
     opacity: 0;
+    visibility: hidden;
+
     & .create-schedule {
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        visibility: hidden;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -200,11 +205,12 @@ form {
 
 @media (width < 40rem) {
     form {
-        min-width: 27rem;
-        margin-inline: 1.5rem;
+        min-width: 25rem;
+        max-width: 100vw;
+        padding-inline: 1.25rem;
 
         & .create-schedule {
-            width: 30rem;
+            width: 25rem;
 
             & .form-group {
                 & .section-date-time {
@@ -215,6 +221,10 @@ form {
                     }
                 }
             }
+        }
+
+        &::before {
+            width: 100%;
         }
     }
 }
