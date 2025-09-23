@@ -1,5 +1,5 @@
 form {
-
+    opacity: 0;
     & .create-schedule {
         position: fixed;
         top: 50%;

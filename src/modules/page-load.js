@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     schedulesDay();
 });
 
-formPhone.addEventListener("input", (event) => {
-    handlePhone(event);
-});
+if(formPhone !== null) {
+    formPhone.addEventListener("input", (event) => {
+        handlePhone(event);
+    });
+}
 
 function handlePhone(event) {
   let input = event.target
