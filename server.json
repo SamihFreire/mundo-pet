@@ -1,12 +1,3 @@
 {
-  "schedules": [
-    {
-      "id": 1758573342221,
-      "tutorName": "Samih Freire",
-      "petName": "Cacau",
-      "phone": "(88) 99804-5128",
-      "serviceDescription": "Banho",
-      "when": "2025-09-22T22:00:00.000Z"
-    }
-  ]
+  "schedules": []
 }

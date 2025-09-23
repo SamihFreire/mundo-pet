@@ -4,6 +4,7 @@ import "./libs/dayjs"
 
 //CSS
 import "./styles/global.css"
+import "./styles/utility.css"
 import "./styles/aside.css"
 import "./styles/body.css"
 import "./styles/main.css"

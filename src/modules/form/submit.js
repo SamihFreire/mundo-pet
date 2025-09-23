@@ -1,7 +1,11 @@
 import dayjs from "dayjs";
 import { scheduleNew } from "../../services/schedule-new.js"
+import { schedulesDay } from "../schedules/load.js"
+import { clearForm } from "../page-load.js"
 
 const form = document.querySelector("form");
+const sectionCreateSchedule = document.querySelector(".create-schedule");
+const btnNewSchedule = document.getElementById("form-new-schedule");
 const dateForm = document.getElementById("date-form");
 const inputFormTutorName = document.getElementById("form-tutor-name");
 const inputFormPetName = document.getElementById("form-pet-name");
@@ -74,6 +78,16 @@ if(form != null){
                 serviceDescription,
                 when,
             });
+
+            //Recarrega os agendamentos
+            schedulesDay();
+
+            //Fecha o formulário
+            form.classList.remove("show");
+            sectionCreateSchedule.classList.remove("show");
+            btnNewSchedule.classList.remove("occult");
+
+            clearForm();
 
         } catch (error) {
             alert("Não foi possível realizar o agendamento.");
