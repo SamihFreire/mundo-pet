@@ -8,6 +8,7 @@ const sectionCreateSchedule = document.querySelector(".create-schedule");
 // const btnNewSchedule = document.getElementById("form-new-schedule");
 const footerContent = document.querySelector(".footer-content");
 const dateForm = document.getElementById("date-form");
+const selectedDateHeader = document.getElementById("schedule-date-header");
 const inputFormTutorName = document.getElementById("form-tutor-name");
 const inputFormPetName = document.getElementById("form-pet-name");
 const inputFormPhone = document.getElementById("form-phone");
@@ -80,6 +81,10 @@ if(form != null){
                 when,
             });
 
+            //sincroniza a data da página de listagem agendamentos com a data do agendamento criado
+            if(selectedDateHeader !== null && dateForm.value !== selectedDateHeader.value)
+                selectedDateHeader.value = dateForm.value;
+            
             //Recarrega os agendamentos
             schedulesDay();
 

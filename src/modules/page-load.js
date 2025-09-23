@@ -1,11 +1,15 @@
+import dayjs from "dayjs";
 import { schedulesDay, schedulesDayForm } from "./schedules/load.js"
 
 const form = document.querySelector("form");
 const sectionCreateSchedule = document.querySelector(".create-schedule");
+const selectedDateHeader = document.getElementById("schedule-date-header");
 const formPhone = document.getElementById("form-phone");
 const btnNewSchedule = document.getElementById("form-new-schedule");
 const footerContent = document.querySelector(".footer-content");
 const formInputs = document.querySelectorAll("form input, form textarea");
+
+const dateNow = dayjs(new Date()).format("YYYY-MM-DD")
 
 document.addEventListener("DOMContentLoaded", function() {
     schedulesDay();
@@ -19,7 +23,7 @@ window.addEventListener("click", (event) => {
         form.classList.add("show");
         sectionCreateSchedule.classList.add("show");
 
-        schedulesDayForm();
+        schedulesDayForm(selectedDateHeader.value);
 
     }else if(event.target !== sectionCreateSchedule && !sectionCreateSchedule.contains(event.target)) {
 
@@ -52,8 +56,13 @@ const phoneMask = (value) => {
 
 export function clearForm() {
     for (let index = 0; index < formInputs.length; index++) {
-        if(formInputs[index].type === "date") continue;
-        
+        if(formInputs[index].type === "date") {
+            formInputs[index].value = dateNow;
+            formInputs[index].min = dateNow;
+            schedulesDayForm(selectedDateHeader.value);
+            continue;
+        }
+
         const element = formInputs[index];
         element.value = "";
     }

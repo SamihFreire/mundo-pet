@@ -7,10 +7,15 @@ const selectedDateForm = document.getElementById("date-form");
 
 const selectedDateHeader = document.getElementById("schedule-date-header");
 
-export async function schedulesDayForm() {
+export async function schedulesDayForm(dateInput = null) {
     if(selectedDateForm !== null){
+
         //Obtém a data do input
-        const date = selectedDateForm.value;
+        let date = selectedDateForm.value;
+        
+        //Sincroniza a data do input do formulário com a data da listagem de agendamentos
+        if(dateInput) 
+            date = selectedDateForm.value = dateInput;
 
         //Busca na API os agendamentos do dia
         const dailySchedules = await scheduleFetchByDay({ date });
