@@ -13,7 +13,9 @@ export function schedulesShow({ dailySchedules }) {
         periodNight.innerHTML = "";
 
         //Renderiza os agendamentos na tela
-        dailySchedules.forEach((schedule) => {
+        // toSorted() torna a lista imutável e é usado para ordenar os agendamentos por hora
+        dailySchedules.toSorted((a, b) => new Date(a.when) - new Date(b.when))
+        .forEach((schedule) => {
             const li = document.createElement("li");
             const divExternal = document.createElement("div");
             const strongTime = document.createElement("strong");
@@ -47,13 +49,31 @@ export function schedulesShow({ dailySchedules }) {
             const hour = dayjs(schedule.when).hour();
 
             if(hour <= 12) {
+                if(periodMorning.innerHTML !== "") {
+                    const divSeparator = document.createElement("div");
+                    divSeparator.classList.add("divisor");
+                    periodMorning.append(divSeparator);
+                }
                 periodMorning.append(li);
+
             } else if(hour > 12 && hour <= 18) {
+                if(periodAfternoon.innerHTML !== "") {
+                    const divSeparator = document.createElement("div");
+                    divSeparator.classList.add("divisor");
+                    periodAfternoon.append(divSeparator);
+                }
                 periodAfternoon.append(li);
             } else {
+                if(periodNight.innerHTML !== "") {
+                    const divSeparator = document.createElement("div");
+                    divSeparator.classList.add("divisor");
+                    periodNight.append(divSeparator);
+                }
                 periodNight.append(li);
             }
         });
+
+        console.log()
 
     } catch (error) {
         alert("Não foi possível exibir os agendamentos. Tente novamente mais tarde.");

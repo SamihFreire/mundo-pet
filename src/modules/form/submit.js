@@ -5,7 +5,8 @@ import { clearForm } from "../page-load.js"
 
 const form = document.querySelector("form");
 const sectionCreateSchedule = document.querySelector(".create-schedule");
-const btnNewSchedule = document.getElementById("form-new-schedule");
+// const btnNewSchedule = document.getElementById("form-new-schedule");
+const footerContent = document.querySelector(".footer-content");
 const dateForm = document.getElementById("date-form");
 const inputFormTutorName = document.getElementById("form-tutor-name");
 const inputFormPetName = document.getElementById("form-pet-name");
@@ -68,7 +69,7 @@ if(form != null){
             //Insere a hora na data
             const when = dayjs(dateForm.value).add(hour, "hour");
             
-            const id = new Date().getTime();
+            const id = new Date().getTime().toString();
 
             await scheduleNew({
                 id,
@@ -85,7 +86,7 @@ if(form != null){
             //Fecha o formulário
             form.classList.remove("show");
             sectionCreateSchedule.classList.remove("show");
-            btnNewSchedule.classList.remove("occult");
+            footerContent.classList.remove("occult");
 
             clearForm();
 
