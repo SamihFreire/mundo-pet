@@ -14,7 +14,7 @@
   <img width="1917" height="947" alt="TelaPrincipal" src="https://github.com/user-attachments/assets/4dee9298-370c-4340-9c8e-fe24d08564af" />    
 </p>
 
-<h2 id="about">📌 About</h2>
+<h2 id="about">📌 Sobre</h2>
 
 O **Mundo Pet 🐶** é um sistema web desenvolvido para **agendamento de serviços em petshops**.  
 O objetivo é oferecer uma plataforma simples e intuitiva para **donos de pets, petshops e veterinários**, facilitando o processo de marcação de atendimentos.
@@ -44,17 +44,17 @@ O objetivo é oferecer uma plataforma simples e intuitiva para **donos de pets, 
 
 ---
 
-<h2 id="getting-started">🚀 Getting started</h2>
+<h2 id="getting-started">🚀 Começando</h2>
 
 Siga os passos abaixo para rodar o projeto localmente.
 
-<h3 id="cloning">Cloning</h3>
+<h3 id="cloning">Clonando</h3>
 
 ```bash
 git clone https://github.com/SamihFreire/mundo-pet.git
 ```
 
-<h3 id="starting">Starting</h3>
+<h3 id="starting">Comandos de instalação e inicialização</h3>
 
 ```bash
 # Instalar dependências
