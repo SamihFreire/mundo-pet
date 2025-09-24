@@ -38,8 +38,8 @@ O objetivo é oferecer uma plataforma simples e intuitiva para **donos de pets, 
 
 <h3>Sistema responsivo</h3>
 <div style="display: flex;">
-  <img width="411" height="712" alt="TelaPrincipalMobile" src="https://github.com/user-attachments/assets/11dd945d-05f8-412d-b4db-88b3918c555a" />
-  <img width="414" height="713" alt="FormMobile" src="https://github.com/user-attachments/assets/8ddecbf4-d2ae-4c84-9af4-a3a891976cd9" />
+  <img width="411" alt="TelaPrincipalMobile" src="https://github.com/user-attachments/assets/6626c7f7-cf34-4b94-bc0e-86829107e0ea" />
+  <img width="414" height="730" alt="FormMobile" src="https://github.com/user-attachments/assets/8ddecbf4-d2ae-4c84-9af4-a3a891976cd9" />
 </div>
 
 ---
