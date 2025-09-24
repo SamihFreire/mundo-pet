@@ -5,6 +5,7 @@ const form = document.querySelector("form");
 const sectionCreateSchedule = document.querySelector(".create-schedule");
 const selectedDateHeader = document.getElementById("schedule-date-header");
 const formPhone = document.getElementById("form-phone");
+const closeForm = document.querySelector(".close-form");
 const btnNewSchedule = document.getElementById("form-new-schedule");
 const footerContent = document.querySelector(".footer-content");
 const formInputs = document.querySelectorAll("form input, form textarea");
@@ -39,6 +40,16 @@ if(formPhone !== null) {
     formPhone.addEventListener("input", (event) => {
         handlePhone(event);
     });
+}
+
+if(closeForm !== null) {
+    closeForm.addEventListener("click", () => {
+        form.classList.remove("show");
+        sectionCreateSchedule.classList.remove("show");
+        footerContent.classList.remove("occult");
+
+        clearForm();
+    })
 }
 
 function handlePhone(event) {
