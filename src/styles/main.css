@@ -157,7 +157,7 @@ main {
 
 @media (width < 40rem) {
     main {
-        padding-block: 1.312rem 2.75rem;
+        padding-block: 1.312rem 4.75rem;
         padding-inline: 1.25rem;
         /* margin-inline: 5px; */
         min-width: 25rem;
